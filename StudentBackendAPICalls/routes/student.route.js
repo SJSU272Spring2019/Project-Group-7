@@ -9,7 +9,10 @@ const student_controller = require('../controllers/student.controller');
 router.get('/test', student_controller.test);
 router.post('/register', student_controller.student_register);
 router.post('/login', student_controller.student_login);
-router.get('/getCourses', student_controller.getCourses);
+router.get('/getStudentProfile/:id', student_controller.getStudentProfile);
+router.put('/updateStudentProfile/:id/update', student_controller.updateStudentProfile);
+router.get('/getStudentCourses/:id', student_controller.getStudentCourses);
+router.delete('/deleteStudentProfile/:id/delete', student_controller.deleteStudentProfile);
 
 
 module.exports = router;

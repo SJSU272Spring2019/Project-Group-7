@@ -1,8 +1,6 @@
 
 const Students = require('../models/student.model');
 
-//const Quiz = require('../models/student.model');
-
 
 //Simple version, without validation or sanitation
 exports.test = function (req, res)
@@ -12,24 +10,16 @@ exports.test = function (req, res)
 
 exports.student_register = function (req, res)
 {
-
-    const courses=[];
-    courses.push({
-         course_id:req.body.course_id,
-         course_name:req.body.course_name
-     });
-
-
     let newStudent = new Students(
     {
-    student_id: req.body.student_id,
-    student_name: req.body.student_name,
+    _id: req.body._id,
+    first_name: req.body.first_name,
+    last_name: req.body.last_name,
+    email: req.body.email,
+    phone: req.body.phone,
+    address:req.body.address,
     standard: req.body.standard,
-    section: req.body.section,
-    contact: req.body.contact,
-    email_id : req.body.email_id,
-    password:req.body.password,
-    courses : [courses]
+    password : req.body.password
     });
 
     newStudent.save(function (err)
@@ -69,9 +59,9 @@ exports.student_login = function (req, res)
 };
 
 
-exports.getCourses = function (req, res) {
-
-    Students.find({student_id:2,'courses.course_id':1},'courses',function (err, students){
+exports.getStudentProfile = function (req, res) {
+    console.log(req.params.id);
+    Students.findById(req.params.id, function (err, student) {
         if (err) {
             console.log("Unable to get student details from the cluster");
             throw err;
@@ -79,11 +69,55 @@ exports.getCourses = function (req, res) {
 
         else {
             console.log("Successfully retrieved student details from the cluster");
-            res.send(students);
-            console.log(students);
+            console.log(student);
+            res.send(student);
+            }
+
+    })
+};
+
+exports.getStudentCourses = function (req, res) {
+    Students.find(req.params.id, 'courses', function (err, student) {
+
+        if (err) {
+            console.log("Unable to get student details from the cluster");
+            throw err;
+        }
+
+        else {
+            console.log("Successfully retrieved student details from the cluster");
+            res.send(student);
+            }
+
+    })
+};
+
+
+
+exports.updateStudentProfile = function (req, res) {
+    console.log(req.body);
+    Students.findByIdAndUpdate(req.params.id, {$set: req.body}, function (err, student) {
+        if (err) {
+            console.log("Unable to update student details in the database");
+            throw err}
+            else{
+                console.log("Successfully updated student details in the database");
+                res.send('Student details Successfully updated.');
             }
 
     });
 };
 
 
+exports.deleteStudentProfile = function (req, res) {
+    Students.findByIdAndRemove(req.params.id, function (err) {
+        if (err) {
+            console.log("Unable to delete professor details in the database");
+            throw err}
+            else
+            {console.log("Successfully deleted professor details from the database");
+            res.send('Deleted successfully!');
+        }
+
+    })
+};

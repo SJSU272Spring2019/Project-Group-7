@@ -1,23 +1,13 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const Quiz = new Schema({
+const QuizSchema = new Schema({
+    student_id:Number,
+    course_id:Number,
     quiz_id:Number,
     quiz_name:String,
     quiz_marks:Number,
-    tot_marks:Number
-});
-
-
-const CourseQuizSchema = new Schema({
-    course_id:Number,
-    quiz:[Quiz]
-});
-
-
-const QuizSchema = new Schema({
-    student_id:Number,
-    courses:[CourseQuizSchema]
+    total_marks:Number
 });
 
 

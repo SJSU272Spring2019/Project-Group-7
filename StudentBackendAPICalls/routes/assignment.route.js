@@ -7,6 +7,7 @@ const assignment_controller = require('../controllers/assignment.controller');
 
 // a simple test url to check that all of our files are communicating correctly.
 router.get('/assignmentTest',  assignment_controller.assignmentTest);
-router.get('/getAssignmentScore',  assignment_controller.getAssignmentScore);
+router.post('/createAssignment',  assignment_controller.createAssignment);
+router.get('/getAssignment',  assignment_controller.getAssignment);
 
 module.exports = router;

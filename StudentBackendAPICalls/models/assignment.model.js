@@ -1,25 +1,14 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const Assignment = new Schema({
-    assignment_id:Number,
-    assignment_name:String,
-    tot_marks:Number,
-    assignment_marks:Number
-});
-
-
-const CourseAssignmentSchema = new Schema({
-    course_id:Number,
-    assignment:[Assignment]
-});
-
-
 const AssignmentSchema = new Schema({
     student_id:Number,
-    courses:[CourseAssignmentSchema]
+    course_id:Number,
+    assignment_id:Number,
+    assignment_name:String,
+    assignment_marks:Number,
+    total_marks:Number
 });
-
 
 
 // Export the model

@@ -8,5 +8,6 @@ const quiz_controller = require('../controllers/quiz.controller');
 // a simple test url to check that all of our files are communicating correctly.
 router.get('/quizTest',  quiz_controller.test);
 router.get('/getQuiz',  quiz_controller.getQuiz);
+router.post('/quizCreate',  quiz_controller.quizCreate);
 
 module.exports = router;
