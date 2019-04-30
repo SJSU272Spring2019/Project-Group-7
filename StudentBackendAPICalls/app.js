@@ -8,6 +8,7 @@ const quiz = require('./routes/quiz.route');
 const exam = require('./routes/exam.route');
 const courses = require('./routes/course.route');
 const assignment = require('./routes/assignment.route');
+const suggestion = require('./routes/suggestions.route');
 
 const app = express();
 
@@ -32,6 +33,7 @@ app.use('/courses', courses);
 app.use('/quiz', quiz);
 app.use('/exam', exam);
 app.use('/assignment', assignment);
+app.use('/suggestion', suggestion);
 
 let port =  4447;
 
