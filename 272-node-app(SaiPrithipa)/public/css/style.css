@@ -1,0 +1,442 @@
+.cmpe-tile  {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+    margin: 5px;
+    min-width: 250px;
+    background: #6190E8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/*
+.farmer .cmpe-tile {
+    min-width: 300px;
+}
+*/
+
+.cmpe-tile-img img{
+    display: inline-block;
+    width: 80px;
+    float: left;
+}
+
+.cmpe-tile-text {
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.cmpe-student-overview-content {
+    margin: 12% auto;
+    position: relative;
+    width: 70%;
+    color:darkorchid;
+    text-align: left;
+}
+
+.cmpe-student-overview-content a {
+    color: darkgoldenrod;
+}
+.cmpe-student-overview-content .card{
+    display: inline-block;
+    transform: scale(0.7, 0.7);
+}
+
+.card-img-top {
+    transform: scale(0.8, 0.8);
+}
+
+.cmpe-table-icons {
+    width: 20px;
+    margin: 20px;
+    height: 20px;
+}
+.card-body {
+    position: relative;
+    display: inline-block;
+    height: 50%;
+    width: 100%;
+    color: black;
+    
+}
+.cmpe-student-greenhouse-content .card{
+   transform: scale(1.0, 1.0) !important;
+    margin-left: 20px;
+}
+.cmpe-student-greenhouse-content .card-body{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* datatable */
+
+#example tbody {
+    color: black;
+    background: #525575;
+}
+
+.dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_wrapper .dataTables_paginate .paginate_button  {
+    color: darkorchid !important;
+}
+
+.cpme-card-div1 {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-top: 20px;
+    width: 70%;
+    color:darkorchid;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.cpme-card-div2 {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    color:darkorchid;
+    font-weight: bold;
+    font-size: 3em;
+    margin: auto 0;
+}
+
+.bs-example{
+    margin: 20px;
+    }
+.modal-content iframe{
+    margin: 0 auto;
+    display: block;
+}
+
+.modal-dialog {
+    color:black;
+    font-family: var(--font-family-sans-serif);
+}
+
+.modal-header {
+    background: #398970;
+}
+
+.modal-body {
+    background: #525575;
+}
+
+.modal-body input, .modal-body input:focus {
+    background: #525575;
+    color: black;
+}
+
+.video-intro .modal-dialog {
+    max-width: 600px;   
+}
+
+.edit-sensor-modal-dialog {
+    max-width: 600px;
+}
+
+
+
+
+
+.cmpe-student-action-content img{
+    width: 5em;
+}
+
+.cmpe-student-action-content {
+    max-height: 100px;
+}
+
+.cmpe-student-action-content span {
+    padding: 10px 20px;
+    background-color: lightblue;
+    color: blue;
+    margin-right: 10px;
+    opacity: 1;
+}
+
+.cmpe-student-action-content .request-sensor {
+    display: inline-block;
+    position: relative;
+}
+
+.cmpe-student-action-content .delete-request {
+    display: inline-block;
+    position: relative;
+    margin-left: 80px;
+}
+
+.upload-btn {
+    margin: 5px;
+}
+
+.upload-btn-link {
+background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+    
+}
+
+.modal-dialog {
+    max-width: 1000px;
+}
+
+.img-placeholder {
+    max-width: 450px;
+}
+
+.cmpe-student-overview-content
+
+.cmpe-chart-table-content {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+.cmpe-chart-table-content .graph-canvas{
+    display: inline-block;
+    position: relative;
+}
+.cmpe-chart-table-content #bar-chart-1{
+    max-width: 600px;
+    margin-left: 20px;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.cmpe-chart-table-content .cmpe-table{
+    display: inline-block;
+    width: 50%;
+    position: relative;
+}
+
+.add-user-btn {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.site-nav {
+    background: #7386D5;
+}
+
+.marker {
+    display: block;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+}
+    
+pre {
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    left: 10px;
+}
+
+.cmpe-greenhouse-map-content {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.cmpe-greenhouse-map-content #map {
+    width: 70%;
+    text-align: left;
+    display: inline-block;
+    height: 600px;
+    position: relative;
+}
+
+.greenhouse-map-product-buttons {
+    width: 29%;
+    height: 600px;
+    float: left;
+    display: inline-block;
+    height: auto;
+    position: relative;
+}
+
+.greenhouse-map-product-buttons .btn {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+    width: 200px;
+    color:aliceblue;
+    border: 2px solid lightyellow;
+    margin-bottom: 15px;
+}
+
+.greenhouse-map-product-buttons .btn-clicked {
+    color: white;
+    background-color: #dc3545;
+}
+
+
+/*products*/
+
+.cmpe-student-product-content {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.cmpe-student-product-content .head-image {
+    width: 100%;
+    height: 150px;
+    display: inline-block;
+    position: relative;
+}
+
+.cmpe-student-product-content .head-image img {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    display: inline-block;
+}
+
+.cmpe-student-product-content .product-search {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.cmpe-student-product-content .product-search .label {
+    position: relative;
+    display: inline-block;
+    width: 15%;
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.cmpe-student-product-content .product-search .search-input {
+    position: relative;
+    display: inline-block;
+    width: 20%;
+}
+
+.cmpe-student-product-content .product-content {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.cmpe-student-product-content .product-content .row {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-height: 150px;
+    text-align: left;
+    margin:20px;
+}
+
+.cmpe-student-product-content .product-image {
+    width: 20%;
+    height: 150px;
+    display: inline-block;
+    position: relative;
+} 
+
+.cmpe-student-product-content .product-image img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: inline-block;
+}
+
+.cmpe-student-product-content .product-price {
+    width: 20%;
+    display: inline-block;
+    position: relative;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.cmpe-student-product-content .product-description {
+    width: 50%;
+    height: 200px;
+    display: inline-block;
+    position: relative;
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 70px;
+    color: darkgoldenrod;
+}
+
+.course-info-table {
+    position: relative;
+    display: inline-block;
+    width: 55%;
+    text-align: left;
+}
+
+.course-heading {
+    font-size: 2em;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.course-info-notification {
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 25%;
+}
+
+.notification-todo {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.notification-todo .notification-item {
+    margin-top: 20px;
+}
+
+.notification-course-group .notification-item {
+    margin: 5px;
+}
+
+.notification-todo .notification-item a, .notification-course-group .notification-item a {
+    color: darkgoldenrod;
+    text-decoration: underline;
+}
+
+.notification-todo .notification-item a:hover, .notification-course-group .notification-item a:hover {
+    cursor: pointer;
+    color: yellow;
+}
+
+.notification-todo-heading, .notification-course-heading {
+    border-bottom: 1px solid white;
+    width: 200px;
+    margin-top: 50px;
+}
+
+.notification-todo-heading span {
+    margin-left: 10px;
+}
+
+.notification-course-group {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.notification-feedback {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}

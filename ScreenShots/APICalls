@@ -1,0 +1,21 @@
+1. Run in terminal -  node app.js
+
+API calls you will require:
+
+1. localhost:4447/students/register
+
+2. localhost:4447/students/login
+
+3. localhost:4447/students/getStudentProfile/1
+
+4. localhost:4447/students/updateStudentProfile/2/update.     ---> here 2 is student_id
+
+5. localhost:4447/students/deleteStudentProfile/2/delete.    ---> here 2 is student_id
+
+6. localhost:4447/courses/getCourseDetails.    --> to get all course details for a student , Please refer screenshot to give req items
+
+7. localhost:4447/courses/getCourseQuiz.  --> to get all quizes for a particular course for a student , Please refer screenshot to give req items
+
+8. localhost:4447/courses/getCourseExam.  --> to get all exams for a particular course for a student , Please refer screenshot to give req items
+
+9. localhost:4447/courses/getCourseAssignment.  --> to get all assignments for a particular course for a student , Please refer screenshot to give req items

@@ -1,0 +1,22 @@
+{
+  "name": "sbt-manager-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "nishant@adobe.com",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.4"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": ["node_modules/**/node_modeules"],
+    "dealy": "2500"
+  }
+}
