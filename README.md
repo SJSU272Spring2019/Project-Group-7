@@ -1,6 +1,6 @@
 # Project-Group-7
 
-Project Name: StudentPerformanceChecker
+## Project Name: StudentPerformanceChecker
 
 
 ## Project Description 
