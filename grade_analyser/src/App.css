@@ -1,0 +1,346 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.logo {
+  margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height : 125px;
+    
+}
+
+
+.picture {
+
+  margin: 50px auto;
+    text-align: center;
+    width: 100%;
+    height : 400px;
+    
+}
+
+
+.button-content {
+  background-color: purple;
+ 
+  border-style : none;
+ 
+  
+  border-radius: 4px;
+  width : 200px;
+  height:  50px;
+  font-size: 16px;
+  margin-left : 50px;
+
+  
+  
+}
+
+.loginbuttons {
+  margin-left: 450px;
+  margin-top: 40px;
+}
+
+.active:active {
+  background : lightgrey;
+  border-radius: 4px;
+  outline: none;
+
+  border-style : none;
+}
+
+.teacherLogin {
+  margin-top :40px;
+}
+
+
+.size-sm {
+  font-size : 16px;
+  color : white;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 500;
+
+}
+
+  
+.heading {
+  font-size : 15px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: bold;
+
+}
+
+
+.login-form .form-group {
+  margin-bottom:10px;
+}
+.login-form{ text-align:center;}
+.forgot a {
+  color: #777777;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.login-form  .btn.btn-primary {
+ 
+  border-color: #f0ad4e;
+  color: #ffffff;
+  font-size: 14px;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+
+  background-color: purple;
+
+  color: white;
+
+  
+  text-align: center;
+
+  font-size: 16px;
+}
+
+.field{
+ 
+  border: black;
+ 
+  color: #ffffff;
+  font-size: 20px;
+  width: 300px;
+  height: 30px;
+  
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+
+  color: white;
+
+  
+  text-align: center;
+
+  font-size: 16px;
+}
+
+.main-div {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+}
+
+
+
+.form-heading { color:#fff; font-size:23px;}
+.panel h2{ color:#444444; font-size:18px; margin:0 0 8px 0;}
+.panel p { color:#777777; font-size:14px; margin-bottom:30px; line-height:24px;}
+.login-form .form-control {
+  background: #f7f7f7 none repeat scroll 0 0;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+}
+.main-div {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 2px;
+  margin: 10px auto 30px;
+  max-width: 38%;
+  padding: 50px 70px 70px 71px;
+  border: 2px solid black;
+}
+
+.botto-text {
+  color: #ffffff;
+  font-size: 14px;
+  margin: auto;
+}
+.back { text-align: left; margin-top:10px;}
+.back a {color: #444444; font-size: 13px;text-decoration: none;}
+
+
+
+.signup {
+  text-align: center;
+  color :steelblue;
+}
+
+.welcome {
+  text-align: center;
+  color : black;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  background-color: purple;
+  position: fixed;
+  height: 80%;
+  overflow: auto;
+}
+
+.sidebar button {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  background-color: purple;
+  font-size: 14px;
+}
+ 
+.sidebar button.active {
+  background-color : lightslategray;
+  color: white;
+}
+
+.sidebar button:hover:not(.active) {
+  background-color: lightslategray;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar button {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar button {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.icons {
+  margin: 0 auto;
+  position: left;
+  width: 100px;
+  height : 100px;
+  background: purple
+  
+}
+.icons:hover {
+color: grey;
+  
+}
+
+input {
+  width : 250px;
+  height : 100px;
+}
+
+/* .courseButton {
+  border: none;
+  width : 200px;
+  background-color : grey;
+} */
+
+.graph {
+  margin-left : 300px;
+  margin-top : 50px;
+ 
+}
+
+.gradesTable{
+  left : "50px";
+   margin-top : "200px" ;
+   width : "1000px";
+    border: "1px solid black";
+}
+
+.navbar {
+  background: purple;
+  width : 300px;
+  height : 50px;
+  margin-left : 600px;
+  margin-top : 50px;
+  border-radius: 4x;
+  font-size: 20px;
+  font-weight: bold;
+  color : white
+}
+
+a{
+  color : white;
+  padding: 20px;
+}
+
+a:hover {
+  color : grey; 
+}
+
+.btn{
+  background-color : purple;
+  color : white;
+}
+
+.inputGrade {
+
+    width : 80px;
+    height : 25px;
+    border-radius:  4px;
+  
+}
